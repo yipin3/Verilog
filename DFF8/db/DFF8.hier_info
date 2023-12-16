@@ -1,0 +1,15 @@
+|DFF8
+Din[0] => Dout~reg0.DATAIN
+Din[1] => ~NO_FANOUT~
+Din[2] => ~NO_FANOUT~
+Din[3] => ~NO_FANOUT~
+Din[4] => ~NO_FANOUT~
+Din[5] => ~NO_FANOUT~
+Din[6] => ~NO_FANOUT~
+Din[7] => ~NO_FANOUT~
+reset => Dout~reg0.ACLR
+w_en => Dout~reg0.ENA
+clk => Dout~reg0.CLK
+Dout << Dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
