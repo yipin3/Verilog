@@ -1,0 +1,15 @@
+|MultiplierUnit
+A[0] => a0.IN0
+A[1] => a1.IN0
+A[2] => a2.IN0
+A[3] => a3.IN0
+Bi => a0.IN1
+Bi => a1.IN1
+Bi => a2.IN1
+Bi => a3.IN1
+MUout[0] << a0.DB_MAX_OUTPUT_PORT_TYPE
+MUout[1] << a1.DB_MAX_OUTPUT_PORT_TYPE
+MUout[2] << a2.DB_MAX_OUTPUT_PORT_TYPE
+MUout[3] << a3.DB_MAX_OUTPUT_PORT_TYPE
+
+

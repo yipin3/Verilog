@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "MUout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "MUout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MUout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "MUout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Bi",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

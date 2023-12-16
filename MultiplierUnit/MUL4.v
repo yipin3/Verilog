@@ -1,0 +1,31 @@
+// multiplier 4-bit
+module MUL4 (A,B,P);
+input [3:0] A,B;
+output [7:0] P;
+
+wire [3:0] MUout0, MUout1, MUout2, MUout3;
+wire [3:0] CLA_S0, CLA_S1, CLA_S2, CLA_S3;
+wire CLA_Cout0, CLA_Cout1, CLA_Cout2;
+
+MultiplierUnit M0(.A(A),.Bi(B[0]),.MUout(MUout0));
+MultiplierUnit M1(.A(A),.Bi(B[1]),.MUout(MUout1));
+MultiplierUnit M2(.A(A),.Bi(B[2]),.MUout(MUout2));
+MultiplierUnit M3(.A(A),.Bi(B[3]),.MUout(MUout3));
+
+CLA4 C0(.A({1'b0, MUout0[3:1]}), .B(MUout1), 
+        .Cin(1'b0),.S(CLA_S0),.Cout(CLA_Cout0));
+		  
+CLA4 C1(.A({CLA_Cout0, CLA_S0[3:1]}), .B(MUout2), 
+        .Cin(1'b0),.S(CLA_S1),.Cout(CLA_Cout1));
+		  
+CLA4 C2(.A({CLA_Cout1, CLA_S1[3:1]}), .B(MUout3), 
+        .Cin(1'b0),.S(CLA_S2),.Cout(CLA_Cout2));
+
+
+assign P[0] = MUout0[0];
+assign P[1] = CLA_S0[0];
+assign P[2] = CLA_S1[0];
+assign P[6:3] = CLA_S2;
+assign P[7] = CLA_Cout2;
+
+endmodule
