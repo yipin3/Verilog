@@ -1,0 +1,14 @@
+|Decorder3to8
+Din[0] => Decoder0.IN2
+Din[1] => Decoder0.IN1
+Din[2] => Decoder0.IN0
+Dout[0] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[1] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[3] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[4] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[5] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[6] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Dout[7] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
